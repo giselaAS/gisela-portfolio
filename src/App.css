@@ -1,0 +1,68 @@
+:root {
+    --backgroound-color: #fff;
+    --btn-color: #0987f2;
+    --btn-text-color: #fff;
+    --project-card-bg: #ffffff00;
+    --text-colot: #222;
+    --from-text-color: #555;
+    --footer-text-coler: #888;
+}
+
+[data-theme = 'dark'] {
+    --backgroound-color: #222;
+    --btn-color: #fff;
+    --btn-text-color: #222;
+    --project-card-bg: #fff;
+    --text-colot: #fff;
+    --from-text-color: #fff;
+    --footer-text-coler: #bbb;
+}
+
+body {
+    background-color: var(--backgroound-color);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+}
+
+:root {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+h1, h2, h3, p {
+    color: var(--text-colot);
+    margin-top: 0;
+    padding: 0;
+}
+
+h2, h3, p {
+        font-family: 'Roboto Mono', monospace;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h2, h3 {
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 32px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.sectionTitle {
+    margin-bottom: 30px;
+}
+
+.hover {
+    cursor: pointer;
+}

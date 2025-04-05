@@ -1,26 +1,43 @@
 import styles from './HeroStyles.module.css';
 import heroImg from './../../assets/hero-img.png'
-import themeIcon from './../../assets/sun.svg'
-import threadsIcon from './../../assets/twitter-light.svg'
-import githubIcon from './../../assets/github-light.svg'
-import linkedinIcon from './../../assets/linkedin-light.svg'
+import sun from './../../assets/sun.svg'
+import moon from './../../assets/moon.svg'
+import twitterLight from './../../assets/twitter-light.svg'
+import twitterDark from './../../assets/twitter-dark.svg'
+import githubLight from './../../assets/github-light.svg'
+import githubDark from './../../assets/github-dark.svg'
+import LinkedinLight from './../../assets/linkedin-light.svg'
+import linkedinDark from './../../assets/linkedin-dark.svg'
 import curriculo from './../../assets/Currículo - Gisela.pdf'
+import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
+  const { theme, toggleTheme } = useTheme()
+
+  const themeIcon = theme === 'light' ? sun : moon
+  const twitterIcon = theme === 'light' ? twitterLight : twitterDark
+  const githubIcon = theme === 'light' ? githubLight : githubDark
+  const linkedinIcon = theme === 'light' ? LinkedinLight : linkedinDark
+
   return (
     <section id='hero' className='styles.container'>
         <div className={styles.colorModeContainer}>
             <img className={styles.hero} src={heroImg} alt='Profile picture of me'/>
-            <img className={styles.clorMode} src={themeIcon} alt='Color mode icon'/>
+            <img className={styles.clorMode} 
+            src={themeIcon} 
+            alt='Color mode icon'
+            onClick={toggleTheme}/>
         </div>
         <div className={styles.info}>
             <h1>
                 Gisela <br/> Araújo
             </h1>
-            <h2>Frontend Developer</h2>
+            <h2>
+                Frontend Developer
+            </h2>
             <span>
                 <a href='https://www.threads.net/@g154gisa' target='_blank'>
-                    <img src={threadsIcon} alt="Threads icon" />
+                    <img src={twitterIcon} alt="Threads icon" />
                 </a>
                 <a href='https://github.com/giselaAS' target='_blank'>
                     <img src={githubIcon} alt="GitHub icon" />
@@ -29,9 +46,11 @@ function Hero() {
                     <img src={linkedinIcon} alt="Linkedin icon" />
                 </a>
             </span>
-            <p>With a passing for developing modern React web apps.</p>
+            <p>
+                With a passing for developing modern React web apps.
+            </p>
             <a href={curriculo} download>
-                <button className='hover'>Resume</button>
+                <button className='hover'> Resume </button>
             </a>
         </div>
     </section>
