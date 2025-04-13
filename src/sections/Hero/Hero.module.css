@@ -1,3 +1,7 @@
+* {
+    caret-color: transparent !important;
+  }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -9,6 +13,7 @@
 
     .hero {
         max-width: 200px;
+        border-radius: 100000px;
     }
 
     span {
@@ -72,7 +77,30 @@
     .info {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 1px;
     }
 
 }
+
+@media (width >= 800px) {
+    .container {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+        gap: 100px;
+
+        .hero {
+            max-width: 350px;
+            width: 350px;
+        }
+    }
+}
+
+@media (width >= 1400px) {
+    .container {
+      .hero {
+        max-width: 400px;
+        width: 400px;
+      }
+    }
+  }
