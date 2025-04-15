@@ -30,7 +30,7 @@ function Hero() {
                 Gisela <br/> Araújo
             </h1>
             <h2>
-                Frontend Developer
+                Desenvolvedor Frontend
             </h2>
             <span>
                 <a href='https://github.com/giselaAS' target='_blank'>
@@ -41,10 +41,10 @@ function Hero() {
                 </a>
             </span>
             <p className={styles.description}>
-                Hi, if you want to know more about me, check out my resume below for more information.
+                 Olá, se você quiser saber mais sobre mim, confira meu currículo abaixo.
             </p>
             <a href={curriculo} download>
-                <button className='hover'> Resume </button>
+                <button className='hover'> Currículo </button>
             </a>
         </div>
     </section>
