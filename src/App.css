@@ -22,7 +22,7 @@ body {
 :root {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 50px;
 }
 
 h1, h2, h3, p {
@@ -41,17 +41,20 @@ h1, h2 {
 
 h2, h3 {
     font-size: 20px;
+    margin: 5px 0;
 }
 
 h1 {
     font-family: 'Rubik', sans-serif;
     font-size: 40px;
     font-weight: bold;
+    margin: 5px 0;
 }
 
 p {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
+    margin: 5px 30px;
 }
 
 .sectionTitle {
@@ -85,7 +88,7 @@ p {
 
 @media (width >= 1400px) {
     #root {
-        gap: 200px;
+        gap: 100px;
     }
     h1 {
         font-size: 48px;

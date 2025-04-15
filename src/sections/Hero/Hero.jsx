@@ -19,7 +19,7 @@ function Hero() {
   return (
     <section id='hero' className={styles.container}>
         <div className={styles.colorModeContainer}>
-            <img className={styles.hero} src={heroImg} alt='Profile picture of me'/>
+            <img className={styles.hero} src={heroImg} alt='Profile picture of Gisela'/>
             <img className={styles.colorMode} 
             src={themeIcon} 
             alt='Color mode icon'
@@ -41,7 +41,7 @@ function Hero() {
                 </a>
             </span>
             <p className={styles.description}>
-                With a passing for developing modern React web apps.
+                Hi, if you want to know more about me, check out my resume below for more information.
             </p>
             <a href={curriculo} download>
                 <button className='hover'> Resume </button>
