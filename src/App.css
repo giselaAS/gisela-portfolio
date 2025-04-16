@@ -3,6 +3,7 @@
     --btn-color: #0987f2;
     --btn-text-color: #fff;
     --text-colot: #222;
+    --form-text-color: #555;
 }
 
 [data-theme = 'dark'] {
@@ -10,6 +11,7 @@
     --btn-color: #fff;
     --btn-text-color: #222;
     --text-colot: #fff;
+    --form-text-color: #fff;
 }
 
 body {
@@ -31,9 +33,9 @@ h1, h2, h3, p {
     padding: 0;
 }
 
-h2, h3, p {
+h2, h3, p, textarea {
         font-family: 'Roboto Mono', monospace;
-}
+}   
 
 h1, h2 {
     text-transform: uppercase;
@@ -58,7 +60,7 @@ p {
 }
 
 .sectionTitle {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .hover {
