@@ -100,7 +100,7 @@ function Hero() {
                     </a>
                 </span>
                 <p className={styles.description}>
-                    Olá, se você quiser saber mais sobre mim, confira meu currículo abaixo.
+                    Olá, se você quiser saber mais, confira meu currículo abaixo.
                 </p>
                 <a href={curriculo} download>
                     <button className='hover'> Currículo </button>
