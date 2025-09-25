@@ -10,7 +10,7 @@ import LinkedinLight from './../../assets/linkedin-light.svg'
 import linkedinDark from './../../assets/linkedin-dark.svg'
 import mailLight from './../../assets/mail_light.svg'
 import mailDark from './../../assets/mail_dark.svg'
-import curriculo from './../../assets/Currículo_Gisela.pdf'
+import curriculo from './../../assets/Currículo-Gisela.pdf'
 import { useTheme } from '../../common/ThemeContext'
 import Modal from './modal/Modal'
 
