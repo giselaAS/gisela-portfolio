@@ -4,6 +4,9 @@
     --btn-text-color: #fff;
     --text-colot: #222;
     --form-text-color: #555;
+    --card-border-color: #eee;
+    --tech-tag-bg: #fff;
+    --tech-tag-border-color: #ddd;
 }
 
 [data-theme = 'dark'] {
@@ -12,6 +15,9 @@
     --btn-text-color: #222;
     --text-colot: #fff;
     --form-text-color: #fff;
+    --card-border-color: #333;
+    --tech-tag-bg: #222;
+    --tech-tag-border-color: #555;
 }
 
 body {
@@ -57,6 +63,12 @@ p {
     font-size: 15px;
     font-weight: 300;
     margin: 5px 30px;
+}
+
+h4 {
+    font-size: 15px;
+    margin: 5px 0;
+    font-family: 'Roboto Mono';
 }
 
 .sectionTitle {

@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import styles from './Hero.module.css'
-import './contact/Contact.css'
 import heroImg from './../../assets/chatgpt_image_3.png'
 import sun from './../../assets/sun.svg'
 import moon from './../../assets/moon.svg'
@@ -11,8 +10,9 @@ import linkedinDark from './../../assets/linkedin-dark.svg'
 import mailLight from './../../assets/mail_light.svg'
 import mailDark from './../../assets/mail_dark.svg'
 import curriculo from './../../assets/Currículo-Gisela.pdf'
-import { useTheme } from '../../common/ThemeContext'
-import Modal from './modal/Modal'
+import { useTheme } from '../../components/ThemeContext'
+import Modal from '../../components/modal/Modal'
+import Contact from '../contact/Contact'
 
 function Hero() {
     const { theme, toggleTheme } = useTheme()
@@ -48,50 +48,15 @@ function Hero() {
                     Desenvolvedor Frontend
                 </h2>
                 <span>
-                                            {/* Contact */}
                     <a href='#' onClick={openModal} style={{ cursor: 'pointer' }}>
                         <img src={mailIcon}/>
                     </a>
+
                     <Modal isOpen={isModalOpen} onClose={closeModal}>
-                        <section id="contact" className={styles.containerContact}>
-                            <h1 className="sectionTitle">Contato</h1>
-                            <form action='https://formspree.io/f/mrbpvgqn' method='post'>
-                                <div className='formGroup'>
-                                    <label htmlFor='name' hidden> Nome </label>
-                                    <input 
-                                        type='text'
-                                        name='name'
-                                        id='name'
-                                        placeholder='Nome'
-                                        required 
-                                     />
-                                </div>
-                                <div className='formGroup'>
-                                    <label htmlFor='email' hidden> Email </label>
-                                    <input 
-                                        type='text'
-                                        name='email'
-                                        id='email'
-                                        placeholder='Email'
-                                        required 
-                                     />
-                                </div>
-                                <div className='formGroup'>
-                                    <label htmlFor='message' hidden> Menssagem </label>
-                                    <textarea 
-                                        type='text'
-                                        name='message'
-                                        id='message'
-                                        placeholder='Mensagem' 
-                                        required>
-                                    </textarea>              
-                                </div>
-                                <input className="hover btn" type="submit" value="Enviar" />
-                            </form>
-                        </section>
+                        <Contact />
                         <a href='#' onClick={closeModal}></a>
                     </Modal>
-                                            {/* Contact */}
+
                     <a href='https://github.com/giselaAS' target='_blank'>
                         <img src={githubIcon} alt="GitHub icon" />
                     </a>
@@ -100,7 +65,7 @@ function Hero() {
                     </a>
                 </span>
                 <p className={styles.description}>
-                    Olá, se você quiser saber mais, confira meu currículo abaixo.
+                    Olá, clique no currículo abaixo para saber mais sobre mim.
                 </p>
                 <a href={curriculo} download>
                     <button className='hover'> Currículo </button>
