@@ -36,8 +36,8 @@
 }
 
 .card-title {
-  font-size: 20px;
-  margin: 0 0 10px;
+  font-size: 22px;
+  margin: 5px 0 15px 0;
 }
 
 .card-description {
@@ -88,4 +88,5 @@ a {
   font-size: 12px;
   align-items: center;
   color: var(--text-colot);
+  font-family: 'Roboto Mono', monospace;
 }
